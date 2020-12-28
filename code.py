@@ -3,7 +3,7 @@ import time
 #import
 temp={}
 if(x=='yes'):
-	print('Loading master database in temp...)
+	print('Loading master database in temp...')
 	with open('master.json','r') as masteropen:
 		data_load=json.load(masteropen)
 	temp=data_load
@@ -54,7 +54,7 @@ x=input('do you want to save this master dataset yes/no')
 if(x=='yes'):
 	data={}
 	import json
-	with open(master.json','r') as fp:
+	with open('master.json','r') as fp:
 		data=json.load(fp)
 	master=dict(data)
 	master=update(temp)
